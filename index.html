@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hari Raya Bali</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-image: linear-gradient(to right, #f3f3f3, #fff);
+        }
+
+        h1 {
+            text-align: center;
+            color: #FFD700;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #8B4513;
+            cursor: pointer;
+            margin: 10px 0;
+            text-align: center;
+            border-bottom: 2px solid #FFD700;
+            padding: 10px 0;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+            background-color: rgba(255, 215, 0, 0.1);
+        }
+
+        h2:hover {
+            background-color: rgba(255, 215, 0, 0.2);
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(255, 215, 0, 0.5);
+        }
+
+        .ornamen {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .ornamen img {
+            width: 100%;
+            max-width: 300px; /* Ukuran maksimum untuk ornamen */
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .category {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 20px;
+            width: 30%;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        .sub-topics {
+            display: none;
+            margin-top: 15px;
+            padding: 10px;
+            background-color: rgba(255, 250, 205, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .sub-topics img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .sub-topics p {
+            color: #333;
+            line-height: 1.5;
+        }
+
+        .info-box {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #FFF8DC;
+            border: 1px solid #FFD700;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Gaya untuk subtopik */
+        .sub-topic-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin: 5px 0;
+            color: #8B4513;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Penjelasan untuk Wuku dan Sasih */
+        .penjelasan {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #FFF8DC;
+            border: 1px solid #FFD700;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+    <script>
+        function toggleSubTopics(category) {
+            const subTopics = document.getElementById(category);
+            if (subTopics.style.display === "block") {
+                subTopics.style.display = "none";
+            } else {
+                subTopics.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+
+<h1>Hari Raya Bali</h1>
+
+<div class="ornamen">
+    <img src="6.png" alt="Ornamen">
+</div>
+
+<div class="container">
+    <div class="category">
+        <h2 onclick="toggleSubTopics('besar')">Hari Raya Besar</h2>
+        <div class="sub-topics" id="besar">
+            <div class="sub-topic-title">1. Siwaratri</div>
+            <img src="siwaratri.png" alt="Siwaratri">
+            <p>Siwaratri adalah malam yang sakral bagi umat Hindu. Pada malam ini, umat Hindu melakukan meditasi dan refleksi untuk mendekatkan diri kepada Tuhan. Tradisi ini melambangkan kemenangan cahaya atas kegelapan.</p>
+            <div class="sub-topic-title">2. Galungan</div>
+            <img src="galungan.png" alt="Galungan">
+            <p>Galungan adalah perayaan untuk menghormati para leluhur. Pada saat Galungan, keluarga berkumpul dan mempersiapkan sesajen untuk dipersembahkan kepada roh nenek moyang. Perayaan ini dilakukan setiap 210 hari.</p>
+            <div class="sub-topic-title">3. Kuningan</div>
+            <img src="kuningan.png" alt="Kuningan">
+            <p>Kuningan adalah hari untuk menghormati roh para leluhur yang telah meninggal. Kuningan dirayakan 10 hari setelah Galungan. Pada hari ini, umat Hindu mengunjungi pura dan melakukan upacara pemujaan.</p>
+            <div class="sub-topic-title">4. Saraswati</div>
+            <img src="saraswati.png" alt="Saraswati">
+            <p>Saraswati adalah hari perayaan untuk Dewi Saraswati, dewi ilmu pengetahuan dan seni. Umat Hindu menghormati Dewi Saraswati dengan mempersembahkan buku dan alat tulis di pura.</p>
+            <div class="sub-topic-title">5. Banyu Pinaruh</div>
+            <img src="banyu.png" alt="Banyu Pinaruh">
+            <p>Banyu Pinaruh adalah ritual pembersihan diri. Pada hari ini, umat Hindu melakukan pembersihan spiritual dan mandi di tempat suci untuk membuang segala kotoran dan dosa.</p>
+            <div class="sub-topic-title">6. Pagerwesi</div>
+            <img src="pagerwesi.png" alt="Pagerwesi">
+            <p>Pagerwesi adalah hari perayaan untuk menjaga diri dari hal-hal buruk. Umat Hindu melaksanakan upacara di pura dan melakukan sembahyang sebagai bentuk perlindungan.</p>
+            <div class="sub-topic-title">7. Nyepi</div>
+            <img src="ogoh.png" alt="Nyepi">
+            <p>Nyepi adalah hari raya sepi yang diadakan setiap tahun. Pada hari ini, umat Hindu melakukan puasa dan tidak melakukan aktivitas apapun sebagai bentuk refleksi diri.</p>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2 onclick="toggleSubTopics('wuku')">Hari Raya Berdasarkan Wuku</h2>
+        <div class="sub-topics" id="wuku">
+            <div class="sub-topic-title">1. Anggar Kasih</div>
+            <img src="anggar.png" alt="Anggar Kasih">
+            <p>Anggar Kasih adalah perayaan yang jatuh pada hari tertentu dalam kalender Bali. Hari ini biasanya digunakan untuk mendoakan keselamatan dan keberkahan.</p>
+            <div class="sub-topic-title">2. Buda Kliwon</div>
+            <img src="budak.png" alt="Buda Kliwon">
+            <p>Buda Kliwon adalah hari yang dihormati setiap bulan, di mana umat Hindu melakukan persembahan kepada dewa-dewi dan leluhur.</p>
+            <div class="sub-topic-title">3. Tumpek</div>
+            <img src="tumpek.png" alt="Tumpek">
+            <p>Tumpek adalah hari untuk memperingati tanaman dan hewan. Umat Hindu merayakan dengan memberikan sesajen kepada tanaman dan hewan peliharaan.</p>
+            <div class="sub-topic-title">4. Buda Wage</div>
+            <img src="budaw.png" alt="Buda Wage">
+            <p>Buda Wage adalah perayaan yang dilakukan di hari Buda Wage. Hari ini dipenuhi dengan kegiatan spiritual dan puja.</p>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2 onclick="toggleSubTopics('sasih')">Hari Raya Berdasarkan Sasih</h2>
+        <div class="sub-topics" id="sasih">
+            <div class="sub-topic-title">1. Purnama</div>
+            <img src="purnama.jpeg" alt="Purnama">
+            <p>Purnama adalah perayaan bulan purnama yang biasanya digunakan untuk berdoa dan memohon keberkahan.</p>
+            <div class="sub-topic-title">2. Tilem</div>
+            <img src="tilem.jpeg" alt="Tilem">
+            <p>Tilem adalah hari di mana bulan berada dalam fase gelap. Pada hari ini, umat Hindu melakukan refleksi dan ritual pembersihan.</p>
+        </div>
+    </div>
+</div>
+
+<div class="info-box penjelasan">
+    <h2>Pentingnya Wuku dan Sasih</h2>
+    <p>Wuku dan Sasih adalah bagian penting dari kalender Bali yang mempengaruhi banyak aspek kehidupan dan upacara keagamaan. Setiap Wuku memiliki makna dan simbolisme yang unik, yang mencerminkan ritme alam dan spiritualitas masyarakat Bali.</p>
+    <p>Sasih, yang berkaitan dengan fase bulan, juga berpengaruh pada berbagai ritual dan perayaan. Pada bulan purnama, umat Hindu biasanya melakukan upacara besar, sementara pada Tilem, mereka melakukan pembersihan dan refleksi.</p>
+</div>
+
+</body>
+</html>
